@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Đức Trí</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/elegant-icons.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/slicknav.min.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <!-- <header class="header">
+      <div class="header__top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                      <div class="header__top__left">
+                          <ul>
+                              <li><i class="fa fa-envelope"></i><a href="mailto:tringuyen@duck.com">tringuyen@duck.com</a></li>
+                              <li>Free Shipping for all Order of $99</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                      <div class="header__top__right">
+                          <div class="header__top__right__social">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-linkedin"></i></a>
+                              <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                          </div>
+                          <div class="header__top__right__language">
+                              <img src="img/language.png" alt="">
+                              <div>English</div>
+                              <span class="arrow_carrot-down"></span>
+                              <ul>
+                                  <li><a href="#">Spanis</a></li>
+                                  <li><a href="#">English</a></li>
+                              </ul>
+                          </div>
+                          <div class="header__top__right__auth">
+                              <a href="./login/sign-In.html"><i class="fa fa-user"></i> Login</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3">
+                  <div class="header__logo">
+                      <a href="./index.html"><img src="http://themes.halothemes.com/html/ella-html-demo/assets/images/banners/home/home-10/logo.png" width="130px" alt=""></a>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <nav class="header__menu">
+                      <ul>
+                          <li><a href="../index.html">Home</a></li>
+                          <li class="active"><a href="./index.html">Shop</a></li>
+                          <li><a href="#">Pages</a>
+                              <ul class="header__menu__dropdown">
+                                  <li><a href="./shop-details.html">Shop Details</a></li>
+                                  <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                  <li><a href="./checkout.html">Check Out</a></li>
+                                  <li><a href="./blog-details.html">Blog Details</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="./blog.html">Blog</a></li>
+                          <li><a href="./contact.html">Contact</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="col-lg-3">
+                  <div class="header__cart">
+                      <ul>
+                          <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                      </ul>
+                      <div class="header__cart__price">item: <span>$150.00</span></div>
+                  </div>
+              </div>
+          </div>
+          <div class="humberger__open">
+              <i class="fa fa-bars"></i>
+          </div>
+      </div>
+  </header> -->
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button class="btn" id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('AudioEquipments')">
+          Audio Equipments
+        </button>
+        <button class="button-value" onclick="filterProduct('Laptops&Tablets')">
+          Laptop & Tablets
+        </button>
+        <button class="button-value" onclick="filterProduct('GamingAccessories')">
+          Gaming Accessories
+        </button>
+        <button class="button-value" onclick="filterProduct('VideoGame')">
+          Video Game
+        </button>
+        <button class="button-value" onclick="filterProduct('Headphone')">
+          Headphone
+        </button>
+        <button class="button-value" onclick="filterProduct('Smartphone')">
+          Smartphone
+        </button>
+        <button class="button-value" onclick="filterProduct('Camera&Video')">
+          Camera & Video
+        </button>
+        <button class="button-value" onclick="filterProduct('TV&ComputerScreen')">
+          TV & Computer Screen
+        </button>
+        <button class="button-value" onclick="filterProduct('Storage&DigitalDevices')">
+          Storage & Digital Devices
+        </button>
+        <button class="button-value" onclick="filterProduct('Smartwatch')">
+          Smartwatch
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,560 @@
+let products = {
+    data: [
+  {
+    "name": "Sony Playstation 5",
+    "price": 499.99, 
+    "img": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$",
+    "category": "VideoGame"
+  },
+  {
+    "name": "Xbox Series X",
+    "price": 499.99,
+    "img": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mRni?ver=a707",
+    "category": "VideoGame"
+  },
+  {
+    "name": "Nintendo Switch",
+    "price": 299.99,
+    "img": "https://hanoicomputercdn.com/media/product/66919_may_choi_game_nintendo_switch_oled_splatoon_3_model_0003_4.jpg", 
+    "category": "VideoGame"
+  },
+  {
+    "name": "iPhone 14 Pro",
+    "price": 1099.99,
+    "img": "https://cdn2.cellphones.com.vn/x/media/catalog/product/x/_/x_m_24_1_2_1.png",
+    "category": "Smartphone"
+  },
+  {
+    "name": "Samsung Galaxy S22",
+    "price": 799.99,
+    "img": "https://images.samsung.com/is/image/samsung/p6pim/vn/2202/gallery/vn-galaxy-s22-s901-sm-s901eidgxxv-530762309?$1300_1038_PNG$",
+    "category": "Smartphone"
+  },
+  {
+    "name": "Google Pixel 7",
+    "price": 599.99,
+    "img": "https://m.media-amazon.com/images/I/61bFypVJVyL.jpg",
+    "category": "Smartphone"
+  },
+  {
+    "name": "LG OLED 4K TV",
+    "price": 1299.99, 
+    "img": "https://thegioithietbiso.com/data/product/shh1621152122.jpg",
+    "category": "TV&ComputerScreen"
+  },
+  {
+    "name": "Samsung Odyssey Monitor",
+    "price": 279.99,
+    "img": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming-monitors/pdp/lc49g95tssnxza/Asset1.jpg?$product-details-jpg$",
+    "category": "TV&ComputerScreen"
+  },
+  {
+    "name": "Acer Predator Monitor",
+    "price": 399.99,
+    "img": "https://m.media-amazon.com/images/I/61h3Kw4omfL._AC_UF894,1000_QL80_.jpg",
+    "category": "TV&ComputerScreen"
+  },
+  {  
+    "name": "Logitech Gaming Mouse",
+    "price": 49.99,
+    "img": "https://npcshop.vn/media/product/5258-g502-lightspeed-gallery-1.png", 
+    "category": "GamingAccessories"
+  },
+  {
+    "name": "Razer Gaming Keyboard",
+    "price": 129.99,
+    "img": "https://assets2.razerzone.com/images/pnx.assets/af826d2feba4d6574c40c9287941d567/ornata-v3-500x500.png",
+    "category": "GamingAccessories"
+  },
+  {
+    "name": "Bose QuietComfort Headphones", 
+    "price": 249.99,
+    "img": "https://mainguyen.sgp1.digitaloceanspaces.com/160027/tai-nghe-chong-on-bose-quietcomfort-45--2.jpeg",
+    "category": "Headphone"
+  },
+  {
+    "name": "JBL Bluetooth Speaker",
+    "price": 99.99,
+    "img": "https://vn.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb501cbb6/JBL_Go2_Hero_Midnight_Black-1605x1605px.png?sw=537&sfrm=png",
+    "category": "AudioEquipments"
+  },
+  {
+    "name": "Canon EOS R6 Camera",
+    "price": 2499.99,
+    "img": "https://i1.adis.ws/i/canon/eos-r6-rf24-105mm-f4_7.1_is_stm_front-on_square_6412568cc0e7484b96bd55e43069a56c",
+    "category": "Camera&Video"
+  },
+  {
+    "name": "GoPro Hero 11",
+    "price": 399.99,
+    "img": "https://goprovietnam.vn/wp-content/uploads/2023/05/gopro-hero-11-black-1-1.jpg",
+    "category": "Camera&Video"
+  },
+  {
+    "name": "iRobot Roomba",
+    "price": 399.99,
+    "img": "https://chuyennoidianhat.com/wp-content/uploads/2021/08/643-600x400-1.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Ninja Foodi Grill",
+    "price": 199.99,
+    "img": "https://cdn-amz.woka.io/images/I/71himNpCYgL.jpg", 
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Fitbit Sense Smartwatch",
+    "price": 199.99,
+    "img": "https://www.fitbit.com/global/content/dam/fitbit/global/pdp/devices/sense/hero-static/sage-grey/sense-sage-gray-device-3qt.png",
+    "category": "Smartwatch"
+  },
+  {
+    "name": "MacBook Air Laptop",
+    "price": 999.99,
+    "img": "https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-silver-600x600.jpg",
+    "category": "Laptops&Tablets"
+  },
+  {
+    "name": "Lenovo Ideapad Laptop",
+    "price": 649.99,
+    "img": "https://cdn.nguyenkimmall.com/images/detailed/828/10053095-laptop-lenovo-ideapad-3-14iau7-82rj0019vn-1.jpg",
+    "category": "Laptops&Tablets"
+  },
+  {
+    "name": "Beats Studio Wireless",
+    "price": 349.99,
+    "img": "https://shopdunk.com/images/thumbs/0001074_beats-studio-3-wireless-over-ear-headphones.jpeg",
+    "category": "Headphone"
+  },
+  {
+    "name": "Kindle Paperwhite",
+    "price": 139.99,
+    "img": "https://www.maydocsach.vn/images/detailed/9/Kindle_Paperwhite__Gen_10_-_2019_1_bye6-18_6s3w-o8.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Nintendo Switch Pro Controller",
+    "price": 69.99,
+    "img": "https://hanoicomputercdn.com/media/product/66244_tay_cam_choi_game_khong_day_nintendo_switch_pro_controller_mau_den_0004_5.jpg",
+    "category": "GamingAccessories"
+  },
+  {
+    "name": "Logitech C920 Webcam",
+    "price": 69.99,
+    "img": "https://hanoicomputercdn.com/media/product/59474_webcam_logitech_hd_pro_webcam_c920e__7_.jpg", 
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Apple AirPods Pro",
+    "price": 249.99,
+    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MTJV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1694014871985",
+    "category": "Headphone"
+  },
+  {
+    "name": "Fitbit Versa Smartwatch",
+    "price": 149.99,
+    "img": "https://antien.vn/uploaded/Fitbit%20Versa/dong-ho-thong-minh-Fitbit-versa-tot-nhat.jpg",
+    "category": "Smartwatch"
+  },
+  {
+    "name": "Blue Yeti Microphone",
+    "price": 129.99,
+    "img": "https://nhaccutienmanh.vn/wp-content/uploads/2022/01/micro-blue-yeti-x-usb-condenser-microphone-4-condensers-mau-den-1-768x768.jpg",
+    "category": "AudioEquipments"
+  },
+  {
+    "name": "Dyson Vacuum Cleaner", 
+    "price": 599.99,
+    "img": "https://m.media-amazon.com/images/I/61Nh8zUzwrL.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {  
+    "name": "Weber Gas Grill",
+    "price": 399.99,
+    "img": "https://product-images.weber.com/Grill-Images/Gas/35310001B_1800x1800.png?w=800&h=800&auto=compress%2Cformat",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Keurig Coffee Maker",
+    "price": 99.99,
+    "img": "https://images.keurig.com/is/image/keurig/K-Duo-Single-Serve-Carafe-Coffee-Maker_5000204977?fmt=png-alpha",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Vitamix Blender",
+    "price": 249.99,
+    "img": "https://www.vitamix.com/content/dam/vitamix/migration/media/other/images/e/e310-proud-black-620x620__1.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Breville Toaster Oven",
+    "price": 249.99,
+    "img": "https://assets.breville.com/cdn-cgi/image/width=1300,format=auto/BOV450/BOV450XL.jpg?pdp",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "KitchenAid Stand Mixer",
+    "price": 279.99,
+    "img": "https://m.media-amazon.com/images/I/71KiX7LRTML.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Apple iPad 10.2",
+    "price": 329.99,
+    "img": "https://cdn2.cellphones.com.vn/x/media/catalog/product/i/p/ipad-10-2-2021-3_6_1_2_1.png",
+    "category": "Laptops&Tablets"
+  },
+  {
+    "name": "Amazon Fire HD Tablet",
+    "price": 99.99,
+    "img": "https://cdn.chiaki.vn/unsafe/0x480/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product/2022/02/620a03eb52144-14022022142531.jpg",
+    "category": "Laptops&Tablets"
+  },
+  {
+    "name": "Apple Watch Series 8",
+    "price": 399.99,
+    "img": "https://www.maccenter.vn/App_Images/AppleWatch-Series8-White-SportBand-A.jpg",
+    "category": "Smartwatch"
+  },
+  {
+    "name": "Google Nest Hub",
+    "price": 99.99,
+    "img": "https://gucongnghe.com/wp-content/uploads/2021/04/Google-Nest-Hub-gen-2-Mau-Den.jpeg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Philips Hue Starter Kit",
+    "price": 99.99,
+    "img": "https://gucongnghe.com/wp-content/uploads/2018/08/Philips-Hue-Color-Starter-Kit-2-Pack.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Echo Dot Smart Speaker",
+    "price": 39.99,
+    "img": "https://gucongnghe.com/wp-content/uploads/2023/02/echo-dot-with-clock-gen-5-mau-xanh.jpg",
+    "category": "AudioEquipments"
+  },
+  {
+    "name": "Ring Video Doorbell",
+    "price": 99.99,
+    "img": "https://gucongnghe.com/wp-content/uploads/2018/05/Ring-Video-Doorbell-2-1.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Sonos One Speaker",
+    "price": 199.99,
+    "img": "https://m.media-amazon.com/images/I/710Dq0xYIsL.jpg",
+    "category": "AudioEquipments"
+  },
+  {
+    "name": "Ultimate Ears Boom Speaker",
+    "price": 149.99,
+    "img": "https://cdn-amz.woka.io/images/I/81dK-bGlchL.jpg",
+    "category": "AudioEquipments"
+  },
+  {
+    "name": "Apple AirPods Max",
+    "price": 549.99,
+    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-hero-select-202011_FMT_WHH?wid=607&hei=556&fmt=jpeg&qlt=90&.v=1633623988000",
+    "category": "Headphone"
+  },
+  {
+    "name": "Roku Streaming Stick",
+    "price": 49.99,
+    "img": "https://www.droidshop.vn/wp-content/uploads/2021/08/Thiet-bi-Roku-Streaming-Stick-Plus-4.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Amazon Fire Stick",
+    "price": 39.99,
+    "img": "https://gucongnghe.com/wp-content/uploads/2021/11/Amazon-Fire-TV-Stick-4K-moi.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Nintendo Switch Joy-Cons",
+    "price": 79.99,
+    "img": "https://shoptrongnghia.com/wp-content/uploads/2018/03/Joycon-switch-neon.jpg",
+    "category": "GamingAccessories"
+  },
+  {
+    "name": "Echo Show Smart Display",
+    "price": 94.99,
+    "img": "https://cdn-amz.woka.io/images/I/51EVETDOOeL.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Wyze Security Camera",
+    "price": 25.98,
+    "img": "https://www.wyze.com/cdn/shop/products/v3.png?v=1643399071&width=1946",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Google Wifi Mesh Router",
+    "price": 99.99,
+    "img": "https://i5.walmartimages.com/seo/Google-Wifi-1-Pack-Mesh-Router-Wifi-White_2b4f4b1e-e955-40e0-a479-d3be582990b9_1.a71776560e1e8a3c9911cdefc40b86d7.jpeg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Instant Pot Pressure Cooker",
+    "price": 79.99,
+    "img": "https://order.vinaquick.com/assets/media/nova1.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Bose QuietComfort Earbuds",
+    "price": 279.00,
+    "img": "https://www.maccenter.vn/Headphone/Bose-QuietComfort-Earbuds2-Gray-A.jpg",
+    "category": "Headphone"
+  },
+  {
+    "name": "Apple TV 4K",
+    "price": 179.00,
+    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-tv-4k-hero-select-202210_FMT_WHH?wid=640&hei=600&fmt=jpeg&qlt=90&.v=1664896361164",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Samsung Galaxy Tab S8",
+    "price": 699.99,
+    "img": "https://cdn2.cellphones.com.vn/x/media/catalog/product/t/a/tab_s8_2_3_2.jpg",
+    "category": "Laptops&Tablets" 
+  },
+  {
+    "name": "Asus Zenbook Laptop",
+    "price": 899.99,
+    "img": "https://www.asus.com/media/Odin/Websites/global/ProductLine/20210902104239.png",
+    "category": "Laptops&Tablets"
+  },  
+  {
+    "name": "Lenovo Yoga 2-in-1 Laptop",
+    "price": 999.99,
+    "img": "https://zshop.vn/images/thumbnails/1060/782/detailed/95/ezgif_umg9-jo_at0b-d0.com-webp-to-jpg.jpg",
+    "category": "Laptops&Tablets"
+  },
+  {
+    "name": "Logitech G915 Gaming Keyboard",
+    "price": 229.99,
+    "img": "https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/g915/g915-gallery/uk-g915-wireless-gallery-topdown.png",
+    "category": "GamingAccessories"
+  },
+  {
+    "name": "Corsair K70 RGB Keyboard",
+    "price": 169.99,
+    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6298/6298657cv11d.jpg",
+    "category": "GamingAccessories"  
+  },
+  {
+    "name": "SteelSeries Arctis 7 Headset",
+    "price": 149.99,
+    "img": "https://cdn-amz.woka.io/images/I/81OH9RbvR7L.jpg",
+    "category": "GamingAccessories"
+  },
+  {
+    "name": "LG Gram 17 Laptop",
+    "price": 1349.99,
+    "img": "https://www.lg.com/vn/images/laptops/md07572890/gallery/D-2.jpg",
+    "category": "Laptops&Tablets"
+  },
+  {
+    "name": "Logitech C920x Webcam",
+    "price": 69.99,
+    "img": "https://resource.logitech.com/content/dam/logitech/en/products/webcams/c920s/gallery/c920s-gallery-1.png",
+    "category": "Storage&DigitalDevices"
+  }, 
+  {
+    "name": "WD My Passport SSD",
+    "price": 89.99, 
+    "img": "https://axioovn.net/wp-content/uploads/2022/10/My-passport-ssd-silver-1Tb.webp",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Anker PowerCore Battery",
+    "price": 39.99,
+    "img": "https://cdn.shopify.com/s/files/1/0493/9834/9974/products/A1619011_TD01_V2.jpg?v=1638796552",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Echo Dot Smart Speaker",
+    "price": 29.99,
+    "img": "https://www.electrocity.ie/wp-content/uploads/2023/03/amazon-echo-dot-smart-speaker-with-alexa-sandstone-1.png",
+    "category": "AudioEquipments" 
+  },
+  {
+    "name": "Ultimate Ears Wonderboom Speaker",
+    "price": 99.99,
+    "img": "https://antuan.vn/public/uploads/2018/09/wonderboom-2.jpg",
+    "category": "AudioEquipments"
+  },
+  {
+    "name": "Apple Mac Mini Desktop",
+    "price": 799.99,
+    "img": "https://m.media-amazon.com/images/I/71pC69I3lzL._AC_UY327_QL65_.jpg",
+    "category": "Laptops&Tablets"
+  },
+  {
+    "name": "Acer Spin 311 Chromebook",
+    "price": 219.00,
+    "img": "https://m.media-amazon.com/images/I/71By9qDiqrL._AC_UF1000,1000_QL80_.jpg",
+    "category": "Laptops&Tablets" 
+  },
+  {
+    "name": "JLab Audio Earbuds",
+    "price": 29.99,
+    "img": "https://m.media-amazon.com/images/I/51iga4sQfmL._AC_UY327_QL65_.jpg",
+    "category": "AudioEquipments" 
+  },
+  {
+    "name": "Victrola Record Player",
+    "price": 49.99,
+    "img": "https://m.media-amazon.com/images/I/71XL5-wiSuL._AC_UY327_QL65_.jpg",
+    "category": "AudioEquipments"
+  },
+  {
+    "name": "SanDisk Extreme Pro SD Card",
+    "price": 38.99,
+    "img": "https://m.media-amazon.com/images/I/71iRu4WBctL._AC_UY327_QL65_.jpg",
+    "category": "Storage&DigitalDevices"
+  },
+  {
+    "name": "Sony a7 III Camera",
+    "price": 1998.00,
+    "img": "https://m.media-amazon.com/images/I/81nzxg1sKWL._AC_UY327_QL65_.jpg",
+    "category": "Camera&Video"
+  },
+  {
+    "name": "DJI Mini 3 Pro Drone",
+    "price": 759.00,
+    "img": "https://m.media-amazon.com/images/I/510S9gvinZL._AC_UY327_QL65_.jpg",
+    "category": "Camera&Video"
+  },
+  {
+    "name": "GoPro Hero 11 Black",
+    "price": 399.99,
+    "img": "https://m.media-amazon.com/images/I/71E3h5ik5yL._AC_UY327_QL65_.jpg",
+    "category": "Camera&Video"
+  },
+  {  
+    "name": "Fitbit Charge 5",
+    "price": 149.95,
+    "img": "https://m.media-amazon.com/images/I/719FuFjlIjL._AC_UY327_QL65_.jpg",
+    "category": "Smartwatch"
+  },
+  {
+    "name": "Samsung Galaxy Watch 5",
+    "price": 279.99,
+    "img": "https://m.media-amazon.com/images/I/61fib-IYZIL._AC_UY327_QL65_.jpg",
+    "category": "Smartwatch"
+  },
+  {
+    "name": "Apple Watch Ultra",
+    "price": 799.00,
+    "img": "https://m.media-amazon.com/images/I/71c0tW2hySL._AC_UY327_QL65_.jpg",
+    "category": "Smartwatch"
+  },
+  {
+    "name": "Sony WH-1000XM5 Headphones",
+    "price": 399.99,
+    "img": "https://m.media-amazon.com/images/I/61+h+uI3wKL._AC_UY327_QL65_.jpg",
+    "category": "Headphone"
+  },
+  {
+    "name": "Bose QuietComfort Earbuds",
+    "price": 279.00,
+    "img": "https://m.media-amazon.com/images/I/51nt4I2rxYL._AC_UY327_QL65_.jpg",
+    "category": "Headphone"
+  },
+  {
+    "name": "JBL Tune 750BTNC Headphones",
+    "price": 149.95,
+    "img": "https://m.media-amazon.com/images/I/61zGo-0NZWL._AC_UY327_QL65_.jpg",
+    "category": "Headphone" 
+  }
+],
+  };
+  
+  for (let i of products.data) {
+    //Create Card
+    let card = document.createElement("div");
+    //Card should have category and should stay hidden initially
+    card.classList.add("card", i.category, "hide");
+    //image div
+    let imgContainer = document.createElement("div");
+    imgContainer.classList.add("image-container");
+    //img tag
+    let image = document.createElement("img");
+    image.setAttribute("src", i.img);
+    imgContainer.appendChild(image);
+    card.appendChild(imgContainer);
+    //container
+    let container = document.createElement("div");
+    container.classList.add("container");
+    //product name
+    let name = document.createElement("h5");
+    name.classList.add("product-name");
+    name.innerText = i.name.toUpperCase();
+    container.appendChild(name);
+    //price
+    let price = document.createElement("h6");
+    price.innerText = "$" + i.price;
+    container.appendChild(price);
+  
+    card.appendChild(container);
+    document.getElementById("products").appendChild(card);
+  }
+  
+  //parameter passed from button (Parameter same as category)
+  function filterProduct(value) {
+    //Button class code
+    let buttons = document.querySelectorAll(".button-value");
+    buttons.forEach((button) => {
+      //check if value equals innerText
+      if (value.toUpperCase() == button.innerText.toUpperCase()) {
+        button.classList.add("active");
+      } else {
+        button.classList.remove("active");
+      }
+    });
+  
+    //select all cards
+    let elements = document.querySelectorAll(".card");
+    //loop through all cards
+    elements.forEach((element) => {
+      //display all cards on 'all' button click
+      if (value == "all") {
+        element.classList.remove("hide");
+      } else {
+        //Check if element contains category class
+        if (element.classList.contains(value)) {
+          //display element based on category
+          element.classList.remove("hide");
+        } else {
+          //hide other elements
+          element.classList.add("hide");
+        }
+      }
+    });
+  }
+  
+  //Search button click
+  document.getElementById("search").addEventListener("click", () => {
+    //initializations
+    let searchInput = document.getElementById("search-input").value;
+    let elements = document.querySelectorAll(".product-name");
+    let cards = document.querySelectorAll(".card");
+  
+    //loop through all elements
+    elements.forEach((element, index) => {
+      //check if text includes the search value
+      if (element.innerText.includes(searchInput.toUpperCase())) {
+        //display matching card
+        cards[index].classList.remove("hide");
+      } else {
+        //hide others
+        cards[index].classList.add("hide");
+      }
+    });
+  });
+  
+  //Initially display all products
+  window.onload = () => {
+    filterProduct("all");
+  };
